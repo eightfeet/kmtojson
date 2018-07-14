@@ -33,7 +33,7 @@ const opreationJSON = (topic, nodeId) => {
     var node = {};
     for (let i = 0; i < topic.length; i++) {
         const element = topic[i];
-        node.message = element.title;
+        node.message = element.title[0].split('&&');
         node.options = [];
         const subTopic = element.children[0].topics[0].topic;
         if (
@@ -44,7 +44,7 @@ const opreationJSON = (topic, nodeId) => {
             for (let n = 0; n < subTopic.length; n++) {
                 const subElement = subTopic[n];
                 node.options.push({
-                    text: subElement.title,
+                    text: subElement.title[0],
                     next: `Qid_${nodeId}_${n}`
                 })
                 if (
@@ -57,7 +57,7 @@ const opreationJSON = (topic, nodeId) => {
             }
         }
     }
-    JSONResult[`Qid_${nodeId}`] = node;
+    JSONResult[nodeId === 0 ? 'entry' : `Qid_${nodeId}`] = node;
     sumind++;
 }
 
