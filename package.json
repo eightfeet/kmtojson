@@ -4,7 +4,8 @@
   "description": "xml to json",
   "main": "index.js",
   "scripts": {
-    "creat": "rm -rf ./src/exportData && mkdir ./src/exportData && node ./src/index.js",
+    "xmlToJSON": "rm -rf ./src/exportData && mkdir ./src/exportData && node ./src/xmlToJSON.js",
+    "kmToJSON": "rm -rf ./src/exportData && mkdir ./src/exportData && node ./src/kmtoJSON.js",
     "clear": "rm -rf ./src/originalData/* && rm -rf ./src/exportData"
   },
   "author": "eightfeet",
