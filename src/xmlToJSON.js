@@ -62,7 +62,7 @@ const opreationJSON = (topic, nodeId) => {
 }
 
 const getData = async () => {
-    const xmldata = await readFile(`./src/originalData/${args[0]}`);
+    const xmldata = await readFile(`./src/originalData/${args[0]}.xml`);
     const data = await xmlToJSON(xmldata);
     const loopData = data['xmap-content'].sheet[0].topic;
     opreationJSON(loopData, sumind);

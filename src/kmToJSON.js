@@ -56,7 +56,7 @@ const setContentToJSON = (data, nodeId) => {
 }
 
 const getData = async () => {
-    const originalData = await readFile(`./src/originalData/${args[0]}`);
+    const originalData = await readFile(`./src/originalData/${args[0]}.km`);
     setBasicToJSON(originalData);
     const loopData = originalData.root;
     setContentToJSON(loopData, sumind);
