@@ -12,7 +12,7 @@
 ```sh
     yarn kmToJSON filename
 ```
-脚本运行后服务包数据将存放于exportData文件目录下      
+脚本运行后生成服务包数据将存放于exportData文件目录下      
 
 ## 数据操作指引
 ### 1、创建数据规则
