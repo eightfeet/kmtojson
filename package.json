@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "xmlToJSON": "rm -rf ./src/exportData && mkdir ./src/exportData && node ./src/xmlToJSON.js",
-    "kmToJSON": "rm -rf ./src/exportData && mkdir ./src/exportData && node ./src/kmtoJSON.js",
-    "clear": "rm -rf ./src/originalData/* && rm -rf ./src/exportData"
+    "kmToJSON": "node ./src/kmtoJSON.js",
+    "clear": "rm -rf ./src/originalData/* && rm -rf ./src/exportData/*"
   },
   "author": "eightfeet",
   "license": "ISC",
